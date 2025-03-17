@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>person</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-sphere color="#ffdfc4" radius="5"></a-sphere>
+        <a-sphere color="white" radius="1" position="2 1.5 5"></a-sphere>
+        <a-sphere color="white" radius="1" position="-2 1.5 5"></a-sphere>
+        <a-sphere color="black" radius="0.2" position="2 1.8 6"></a-sphere>
+        <a-sphere color="black" radius="0.2" position="-2 1.8 6"></a-sphere>
+        <a-cylinder color="#ffdfc4" height="4" radius="0.3"  open-ended="false" side="double" position="0 0 6" rotation="90 0 0"></a-cylinder>
+        <a-cylinder color="#ffdfc4" height="10" radius="1"  open-ended="false" side="double" position="0 -5 0" rotation="0 90 0"></a-cylinder>
+        <a-box color="black" width="10" height="6" depth="15" position="0 -15 0" rotation="90 0 0"></a-box>
+        <a-cylinder color="black" height="15" radius="2"  open-ended="false" side="double" position="-10 -10 0" rotation="0 0 90"></a-cylinder>
+        <a-cylinder color="black" height="15" radius="2"  open-ended="false" side="double" position="10 -10 0" rotation="0 0 90"></a-cylinder>
+        <a-cylinder color="#ffdfc4" height="2" radius="2"  open-ended="false" side="double" position="-18.5 -10 0" rotation="0 0 90"></a-cylinder>
+        <a-cylinder color="#ffdfc4" height="2" radius="2"  open-ended="false" side="double" position="18.5 -10 0" rotation="0 0 90"></a-cylinder>
+        <a-torus-knot color="gray" arc="360" radius="5" radius-tubular="0.5" position="0 -8 0" rotation="90 0 0"></a-torus-knot>
+        <a-box color="black" width="4" height="6" depth="15" position="-3 -30 0" rotation="90 0 0"></a-box>
+        <a-box color="black" width="4" height="6" depth="15" position="3 -30 0" rotation="90 0 0"></a-box>
+        <a-cylinder color="black" height="2" radius="1.5"  open-ended="false" side="double" position="3 -38 0" rotation="0 90 0"></a-cylinder>
+        <a-cylinder color="black" height="2" radius="1.5"  open-ended="false" side="double" position="-3 -38 0" rotation="0 90 0"></a-cylinder>
+        <a-box color="black" width="2" height="2" depth="10" position="3 -40 3.9" rotation="0 0 90"></a-box>
+        <a-box color="black" width="2" height="2" depth="10" position="-3 -40 3.9" rotation="0 0 90"></a-box>
+
+        <a-entity id="rig" position="0 0 0">
+            <a-camera id="camera"></a-camera>
+          </a-entity>
+    </a-scene>
+</body>
+</html>
