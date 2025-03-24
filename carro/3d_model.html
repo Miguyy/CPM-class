@@ -12,17 +12,18 @@
 <a-scene embedded arjs>
 
     <a-assets>
-            <a-asset-item id="carro" src=""></a-asset-item>
+            <a-asset-item id="carro" src='./scene.gltf'></a-asset-item>
         </a-assets>
 
     <!-- define your markers -->
-        <a-marker preset='hiro' src="./scene.gltf">
+        <a-marker preset='hiro'>
 
  <!-- here define the content to display on top of the marker -->
-            <a-entity gltf-model='#carro'></a-entity>
+            <a-entity gltf-model='#carro' scale="20 20 20"></a-entity>
     </a-marker> 
 
 <!-- define a simple camera -->
         <a-entity camera></a-entity>
     </a-scene>
 </body>
+
