@@ -26,18 +26,29 @@
 
       <!--Espaço-->
       <a-sky src="#espaco"></a-sky>
-
-      <a-sphere src="#sol" radius="10" position="-10 0 -10" material="shader:standard"></a-sphere>
-      <a-sphere src="#mercurio" radius="2" position="10 0 -10" material="shader:standard"></a-sphere>
-      <a-sphere src="#venus" radius="4" position="20 0 -10" material="shader:standard"></a-sphere>
-      <a-sphere src="#terra" radius="4" position="30 0 -10" material="shader:standard"></a-sphere>
-      <a-sphere src="#marte" radius="3" position="40 0 -10" material="shader:standard"></a-sphere>
-      <a-sphere src="#jupiter" radius="8" position="55 0 -10" material="shader:standard"></a-sphere>
-      <a-sphere src="#saturno" radius="5" position="75 0 -10" material="shader:standard"></a-sphere>
+      
+      <!--Planetas-->
+      <a-sphere src="#sol" radius="10" position="-10 0 -10" material="shader:standard; roughness:0.2"></a-sphere>
+      <a-text value="Sol" position="-15 -15 -10" width="100" color="white"></a-text>
+      <a-sphere src="#mercurio" radius="2" position="10 0 -10" material="shader:standard; roughness:0.2"></a-sphere>
+      <a-text value="Mercurio" position="5 -5 -10" width="50" color="white"></a-text>
+      <a-sphere src="#venus" radius="4" position="20 0 -10" material="shader:standard; roughness:0.2"></a-sphere>
+      <a-text value="Venus" position="16.5 -8 -10" width="50" color="white"></a-text>
+      <a-sphere src="#terra" radius="4" position="30 0 -10" material="shader:standard; roughness:0.2"></a-sphere>
+      <a-text value="Terra" position="27 -8 -10" width="50" color="white"></a-text>
+      <a-sphere src="#marte" radius="3" position="40 0 -10" material="shader:standard; roughness:0.2"></a-sphere>
+      <a-text value="Marte" position="36.5 -6 -10" width="50" color="white"></a-text>
+      <a-sphere src="#jupiter" radius="8" position="55 0 -10" material="shader:standard; roughness:0.2"></a-sphere>
+      <a-text value="Jupiter" position="51 -12 -10" width="50" color="white"></a-text>
+      <a-sphere src="#saturno" radius="5" position="75 0 -10" material="shader:standard; roughness:0.2"></a-sphere>
+      <a-text value="Saturno" position="71 -10 -10" width="50" color="white"></a-text>
       <a-ring src="#anel_saturno" radius-inner="5" radius-outer="7" position="75 0 -10" rotation="45 0 0" material="shader:standard"></a-ring>
-      <a-sphere src="#urano" radius="4" position="90 0 -10" material="shader:standard"></a-sphere>
-      <a-sphere src="#neptuno" radius="4" position="100 0 -10" material="shader:standard"></a-sphere>
+      <a-sphere src="#urano" radius="4" position="90 0 -10" material="shader:standard; roughness:0.2"></a-sphere>
+      <a-text value="Urano" position="86.5 -10 -10" width="50" color="white" material="shader:standard; roughness:0.2"></a-text>
+      <a-sphere src="#neptuno" radius="4" position="100 0 -10" material="shader:standard; roughness:0.2"></a-sphere>
+      <a-text value="Neptuno" position="95 -10 -10" width="50" color="white"></a-text>
 
+      <!--Nave-->
       <a-entity gltf-model='#nave' scale="5 5 5" position="-20 -50 -10"></a-entity>
         
       <a-entity id="rig" position="0 0 0">
