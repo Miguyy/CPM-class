@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASSROOM</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+
+      <a-assets>
+        <a-asset-item id="classroom" src='classroomTextures/scene.gltf'></a-asset-item>
+        <a-asset-item id="duck" src='./duckTextures/scene.gltf'></a-asset-item>
+      </a-assets>
+
+      <!--Classroom-->
+      <a-entity gltf-model='#classroom' scale="0.5 0.5 0.5" position="-20 -50 -10"></a-entity>
+      <!--Duck-->
+      <a-entity gltf-model='#duck' scale="20 20 20" position="-20.000 3.362 159.991" rotation="0 -180 0 "></a-entity>
+        
+      <a-entity id="rig" position="0 50 0">
+        <a-camera id="camera"></a-camera>
+      </a-entity>
+    </a-scene>
+</body>
+</html>
