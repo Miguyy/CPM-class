@@ -10,16 +10,29 @@
     <a-scene>
 
       <a-assets>
-        <a-asset-item id="classroom" src='classroomTextures/scene.gltf'></a-asset-item>
-        <a-asset-item id="duck" src='./duckTextures/scene.gltf'></a-asset-item>
+        <a-asset-item id="classroom" src='classroomTextures/classroom3.glb'></a-asset-item>
+        <a-asset-item id="duckmaster" src='./duckTextures/duckmaster.glb'></a-asset-item>
+        <img src="./images/poster a3.png" alt="poster" id="poster">
       </a-assets>
 
-      <!--Classroom-->
+      <!------------- CLASSROOM  ------------->
+      <!----------------------------------------------->
       <a-entity gltf-model='#classroom' scale="0.5 0.5 0.5" position="-20 -50 -10"></a-entity>
-      <!--Duck-->
-      <a-entity gltf-model='#duck' scale="20 20 20" position="-20.000 3.362 159.991" rotation="0 -180 0 "></a-entity>
+
+      <!------------- DUCKMASTER  ------------->
+      <!----------------------------------------------->
+      <a-entity gltf-model='#duckmaster' scale="20 20 20" position="-18.776 -6 203" rotation="0 -180 0 "></a-entity>
+
+      <!------------- DUCKLING  ------------->
+      <!----------------------------------------------->
+      <!-- <a-entity gltf-model='#duck' scale="50 50 50" position="-20.000 3.362 159.991" rotation="0 -180 0 "></a-entity> -->
+
+      <!------------- POSTER  ------------->
+      <!----------------------------------------------->
+      <a-plane src="#poster" height="80" width="77.5" position="116.7 32 239" rotation="0 180 0"></a-plane>
+
         
-      <a-entity id="rig" position="0 50 0">
+      <a-entity id="rig" position="70 20 230">
         <a-camera id="camera"></a-camera>
       </a-entity>
     </a-scene>
